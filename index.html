@@ -16,7 +16,7 @@
         <form action="#" method="get">
           <fieldset>
             <!-- DADOS PESSOAIS -->
-             <legend>Dados Pessoais</legend>
+            <legend>Dados Pessoais</legend>
             <label for="userName">Nome</label>
             <input type="text" name="userName" required />
             <br />
@@ -43,13 +43,88 @@
             <br />
           </fieldset>
 
-          <label for="genero">Gênero:</label>
-          <select id="genero" name="genero" required>
-            <option value="">Selecione</option>
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outro">Outro</option>
-          </select>
+          <fieldset>
+            <legend>Perfil</legend>
+            <p>Genero</p>
+            <!-- <label for="userGender">Gênero:</label>
+            <select id="userGender" name="userGender" required>
+              <option value="">Selecione</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select> -->
+            <label for="userGenderMasculino">Masculino</label>
+            <input
+              type="radio"
+              id="userGenderMale"
+              name="userGender"
+              value="masculino"
+            />
+            <label for="userGenderFemale">Feminino</label>
+            <input
+              type="radio"
+              id="userGenderFemale"
+              name="userGender"
+              value="feminino"
+            />
+            <label for="userGenderOther">Outro</label>
+            <input
+              type="radio"
+              id="userGenderOther"
+              name="userGender"
+              value="outro"
+            />
+            <br />
+            <label for="maritalStatus">Estado civil</label>
+            <select name="maritalStatus" id="maritalStatus" required>
+              <option value="notInformed">Selecione</option>
+              <option value="solteiro">Solteiro</option>
+              <option value="casado">Casado</option>
+              <option value="divorciado">Divorciado</option>
+              <option value="viuvo">Viúvo</option>
+            </select>
+
+            <label for="userState">Estado</label>
+            <select name="userState" id="userState" required>
+              <option value="notInformed">Selecione</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </select>
+            <br />
+            <label for="userCity">Cidade</label>
+            <input
+              type="text"
+              id="userCity"
+              name="userCity"
+              autocomplete="address-level2"
+              placeholder="Fortaleza"
+            />
+          </fieldset>
 
           <button type="submit">Enviar</button>
         </form>
