@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
 fieldset {
     border: 2px solid #0a0a0a;
     padding: 20px;
