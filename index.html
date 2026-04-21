@@ -16,7 +16,7 @@
         <form action="#" method="get">
           <fieldset>
             <!-- DADOS PESSOAIS -->
-             <legend>Dados Pessoais</legend>
+            <legend>Dados Pessoais</legend>
             <label for="userName">Nome</label>
             <input type="text" name="userName" required />
             <br />
@@ -43,13 +43,38 @@
             <br />
           </fieldset>
 
-          <label for="genero">Gênero:</label>
-          <select id="genero" name="genero" required>
-            <option value="">Selecione</option>
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
-            <option value="outro">Outro</option>
-          </select>
+          <fieldset>
+            <legend>Perfil</legend>
+            <p>Genero</p>
+            <!-- <label for="userGender">Gênero:</label>
+            <select id="userGender" name="userGender" required>
+              <option value="">Selecione</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select> -->
+            <label for="userGenderMasculino">Masculino</label>
+            <input
+              type="radio"
+              id="userGenderMale"
+              name="userGender"
+              value="masculino"
+            />
+            <label for="userGenderFemale">Feminino</label>
+            <input
+              type="radio"
+              id="userGenderFemale"
+              name="userGender"
+              value="feminino"
+            />
+            <label for="userGenderOther">Outro</label>
+            <input
+              type="radio"
+              id="userGenderOther"
+              name="userGender"
+              value="outro"
+            />
+          </fieldset>
 
           <button type="submit">Enviar</button>
         </form>
